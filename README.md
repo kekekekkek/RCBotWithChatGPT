@@ -1,6 +1,9 @@
+# RCBot AngelScript + ChatGPT
+If you are tired of boring and silent bots, then you can make them talk by using artificial intelligence.<br>This plugin is an enhancement of the [RCBot](https://github.com/rcbotCheeseh/RCBotSven5) plugin.
+
 # Installation
 Installing the plugin consists of several steps:
-1. [Download]() this plugin;
+1. [Download](https://github.com/kekekekkek/RCBotWithChatGPT/archive/refs/heads/main.zip) this plugin;
 2. Next, go to this [page](https://github.com/rcbotCheeseh/RCBotSven5) and, based on the instructions, install the `RCBot` plugin;
 4. After installing `RCBot`, open the `..\Sven Co-op\svencoop\scripts\plugins` directory and place the `BotManager` and `store` folders there. If the system tells you to replace the files, then you will need to agree and replace them;
 5. Next, go to the `..\Sven Co-op\svencoop\scripts\plugins\BotManager` folder and find there the text file `OpenAI.txt`;
