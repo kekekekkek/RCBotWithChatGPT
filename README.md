@@ -13,6 +13,7 @@ Installing the plugin consists of several steps:
 
 # Compile C++
 A simple console window that reads data from a text file and makes a request to the `OpenAI model`.<br>
+Also, you can write a similar program in any other language. The most important thing is to write the query result in a certain format to a file `Prompt.txt`<br>
 Build type: `Release/x86`
 
 **REMEMBER**: This plugin uses manipulation of a text file that writes the request and response from the model, so this file should not be occupied by any other process.<br>
