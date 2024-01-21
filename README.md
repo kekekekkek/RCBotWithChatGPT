@@ -19,6 +19,7 @@ Build type: `Release/x86`
 **REMEMBER**: This plugin uses manipulation of a text file that writes the request and response from the model, so this file should not be occupied by any other process.<br>
 **REMEMBER**: Also, when requesting a model, the player's state is transmitted to it, such as his health, armor, and whether he is alive. You can change this data in the `BotManagerInterface.as` in the `ClientSay` hook.<br>
 **REMEMBER**: Also, by default, the C++ project source code uses the default `gpt-3.5-turbo` model. You can change it manually and recompile the project.<br>
+**REMEMBER**: There are small bugs in the plugin, and sometimes the response from the neural network may be displayed incorrectly.<br>
 
 # Screenshots
 Also, you can write messages not only in English, but also in other languages that the neural network supports.
