@@ -1,5 +1,6 @@
 # RCBot AngelScript + ChatGPT
-If you are tired of boring and silent bots, then you can make them talk by using artificial intelligence.<br>This plugin is an enhancement of the [RCBot](https://github.com/rcbotCheeseh/RCBotSven5) plugin.
+If you are tired of boring and silent bots, then you can make them talk by using artificial intelligence.<br>This plugin is an enhancement of the [RCBot](https://github.com/rcbotCheeseh/RCBotSven5) plugin.<br><br>
+You can watch this short [video](https://www.youtube.com/watch?v=DQUlUy1tHJQ&t=3s) on how it works.
 
 # Installation
 Installing the plugin consists of several steps:
