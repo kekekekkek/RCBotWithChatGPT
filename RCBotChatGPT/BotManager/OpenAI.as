@@ -44,7 +44,7 @@ class COpenAI
 		return 0;
 	}
 	
-	void WaitAnswer(CBasePlayer@ pPlayer, CScheduledFunction@ sfThread)
+	void WaitAnswer(CBasePlayer@ pPlayer)
 	{
 		if (pPlayer !is null)
 		{
@@ -58,7 +58,7 @@ class COpenAI
 					PlayerSay(pPlayer, strAnswer);
 				
 					g_FileSystem.RemoveFile("scripts/plugins/store/Prompt.txt");
-					g_Scheduler.RemoveTimer(sfThread);
+					g_Scheduler.RemoveTimer(g_Scheduler.GetCurrentFunction());
 					
 					@pPlayer = null;
 				}
@@ -79,5 +79,4 @@ class COpenAI
 	
 	string strSaveText = "";
 	CBasePlayer@ pSavePlayer = null;
-	CScheduledFunction@ sfThread = null;
 }

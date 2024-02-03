@@ -480,7 +480,7 @@ final class RCBot : BotManager::BaseBot
 			else
 			{
 				g_OpenAI.SavePrompt(g_OpenAI.strSaveText, true);
-				@g_OpenAI.sfThread = g_Scheduler.SetInterval(@COpenAI(), "WaitAnswer", 1, g_Scheduler.REPEAT_INFINITE_TIMES, @g_OpenAI.pSavePlayer, @g_OpenAI.sfThread);
+				g_Scheduler.SetInterval(@COpenAI(), "WaitAnswer", 1, g_Scheduler.REPEAT_INFINITE_TIMES, @g_OpenAI.pSavePlayer);
 			}
 		
 			if ( bBotHeard )

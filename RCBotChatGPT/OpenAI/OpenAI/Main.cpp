@@ -6,7 +6,7 @@ COpenAI g_OpenAI;
 
 int main()
 {
-	bool bHide = false;
+	bool bShow = true;
 
 	string strAnswer = "";
 	string strReadFile = "";
@@ -27,12 +27,19 @@ int main()
 
 			if (GetAsyncKeyState(VK_F5) & 1)
 			{
-				bHide = !bHide;
-
-				if (bHide)
-					ShowWindow(GetConsoleWindow(), HIDE_WINDOW);
+				if (GetForegroundWindow() == GetConsoleWindow())
+				{
+					bShow = !bShow;
+					ShowWindow(GetConsoleWindow(), bShow);
+				}
 				else
-					ShowWindow(GetConsoleWindow(), SHOW_OPENWINDOW);
+				{
+					if (!IsWindowVisible(GetConsoleWindow()))
+					{
+						bShow = true;
+						ShowWindow(GetConsoleWindow(), bShow);
+					}
+				}
 			}
 
 			if (g_Utils.IndexOf(strReadFile, " - {Prompt}") != -1)
